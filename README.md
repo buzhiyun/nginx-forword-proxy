@@ -4,11 +4,6 @@
 ### 构建
 `主要是之前编译的太大了，这次换alpine减小镜像大小，顺便升级下nginx`
 
-构建的话，目录下需要先下载 并解压
-- [nginx-1.24.0.tar.gz](https://nginx.org/download/nginx-1.24.0.tar.gz)  
-- [ngx_http_proxy_connect_module.zip](https://github.com/chobits/ngx_http_proxy_connect_module/archive/refs/heads/master.zip)
-
-
 docker build 的目录结构大致如下
 
 ```shell
