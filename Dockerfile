@@ -15,7 +15,7 @@ RUN sed -i 's#dl-cdn.alpinelinux.org#mirrors.tencent.com#g' /etc/apk/repositorie
     && ln -sf /dev/stderr /nginx/logs/error.log && \
     mv /nginx/conf/nginx.conf /nginx/conf/nginx.conf.bak && cp /build/etc/nginx/nginx.conf /nginx/conf/nginx.conf && cp -r /build/etc/nginx/conf.d /nginx/conf/ && \
     rm -rf /build && apk del --no-network .build-deps curl && \
-    apk add pcre2-dev 
+    apk add pcre2
 
 WORKDIR /nginx
 
