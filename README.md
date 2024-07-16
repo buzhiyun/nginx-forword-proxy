@@ -34,7 +34,7 @@ export https_proxy=http://xx.xx.xxx.xx:7777
 就可以连接了 ， 浏览器用SwitchyOmega 插件设置http代理。
 
 如果需要修改设置代理白名单，只允许或者限制某些域名，映射一个proxy.conf 到容器的 /nginx/conf/conf.d/proxy.conf ，设置文件中的map段，允许的映射为1，不允许的设置成 非 1 的值即可
-```lua
+```nginx
 map $host $name {
     # 需要限制的时候把 default 改成 0
     default      0;
