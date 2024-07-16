@@ -14,14 +14,13 @@ docker build 的目录结构大致如下
 ```shell
 .
 ├── Dockerfile
+├── README.md
 ├── build.sh
-├── etc
-│   └── nginx
-│       ├── conf.d
-│       │   └── proxy.conf
-│       └── nginx.conf
-└── ngx_http_proxy_connect_module
-    ├── ...
+└── etc
+    └── nginx
+        ├── conf.d
+        │   └── proxy.conf
+        └── nginx.conf
 
 ```
 
