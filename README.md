@@ -19,6 +19,11 @@ docker build 的目录结构大致如下
 
 ```
 
+### 快速使用
+```shell
+docker run --rm -d -p 7777:7777 buzhiyun/http-proxy:v1.24.0-alpine
+```
+
 ### 配置
 基本不用配置，直接容器启动后监听 7777 端口, 客户端执行
 ```shell
