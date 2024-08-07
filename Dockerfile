@@ -1,4 +1,4 @@
-FROM alpine:3.20 AS build 
+FROM alpine:3.16 AS build 
 
 ADD . /build
 WORKDIR /build
