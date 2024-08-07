@@ -20,6 +20,7 @@ env:
   # github.repository as <account>/<repo>
   IMAGE_NAME: buzhiyun/http-proxy
   # IMAGE_NAME: ${{ github.repository }}
+  DOCKER_USER: buzhiyun
 
 
 jobs:
@@ -59,7 +60,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           # username: ${{ github.actor }}
-          username: ${{ secrets.DOCKER_USER }}
+          username: ${{ env.DOCKER_USER }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
       # Extract metadata (tags, labels) for Docker
